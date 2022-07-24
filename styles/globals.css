@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "upbolters";
+  src: url("../fonts/UPBOLTERS.otf");
+}
+
+* {
+  font-family: "upbolters";
+}
+
+body {
+  margin: 0;
+  background-image: url(https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/uml.sidearmsports.com/images/responsive_2020/site_bg.jpg);
+}
