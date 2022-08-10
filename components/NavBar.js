@@ -8,6 +8,7 @@ import {
   Burger,
   Paper,
   Transition,
+  Image
 } from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
 
@@ -131,14 +132,16 @@ export function Nav() {
   return (
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
-        <a href="/" className={classes.anchorHeader}>
-          <img
-            src="team-logo.png"
-            width="100px"
-            alt="riverhawk-logo"
-            className={classes.navLogo}
-          />
-        </a>
+        <Link href="/" className={classes.anchorHeader}>
+          <a>
+            <Image
+              src="team-logo.png"
+              width="100px"
+              alt="riverhawk-logo"
+              className={classes.navLogo}
+            />
+          </a>
+        </Link>
         <Group spacing={7} className={classes.links}>
           {items}
         </Group>

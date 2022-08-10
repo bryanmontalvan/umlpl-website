@@ -82,7 +82,7 @@ export function ContactUs() {
             UMass Lowell Campus Recreation Center
           </Text>
           <Text size="md" className={classes.description}>
-            <a href={crc_address} target="_blank" className={classes.link}>
+            <a href={crc_address} target="_blank" rel="noreferrer" className={classes.link}>
               322 Aiken Ave, Lowell, MA 01854
             </a>
           </Text>
