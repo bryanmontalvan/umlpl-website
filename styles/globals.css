@@ -3,6 +3,11 @@
   src: url("../fonts/UPBOLTERS.otf");
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
 * {
   font-family: "upbolters";
 }

@@ -15,8 +15,9 @@ export default function Home() {
         <Nav />
         <HeroContentUML />
         <LeadGrid />
-        <Banner />
+        <Banner link="https://goriverhawks.com/images/2020/12/1/parallax2_bg.jpg" />
         <ContactUs />
+        <Banner link="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/uml.sidearmsports.com/images/responsive_2020/promo_bg.jpg" />
         <FooterSocial />
       </ParallaxProvider>
     </>

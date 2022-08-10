@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import {
   createStyles,
@@ -10,12 +10,6 @@ import {
   Transition,
 } from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
-import {
-  BrandGithub,
-  BrandSlack,
-  BrandTwitter,
-  BrandYoutube,
-} from 'tabler-icons-react';
 
 import Link from 'next/link'
 
@@ -65,9 +59,6 @@ const useStyles = createStyles((theme) => ({
   },
 
   navLogo: {
-    // '@media (max-width: 520px)': {
-    //   width: '30%',
-    // },
     [theme.fn.smallerThan('sm')]: {
       height: "100%",
       width: "100%"
@@ -97,7 +88,6 @@ const useStyles = createStyles((theme) => ({
 
   anchorHeader: {
     [theme.fn.smallerThan('sm')]: {
-      // height: 30,
       width: 80,
     },
   },
@@ -143,7 +133,7 @@ export function Nav() {
       <Container className={classes.header}>
         <a href="/" className={classes.anchorHeader}>
           <img
-            src={"https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/uml.sidearmsports.com/images/responsive_2020/logo_main.svg"}
+            src="team-logo.png"
             width="100px"
             alt="riverhawk-logo"
             className={classes.navLogo}

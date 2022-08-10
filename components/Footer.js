@@ -4,8 +4,7 @@ import { BrandTwitter, BrandYoutube, BrandInstagram } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
   footer: {
-    marginTop: 120,
-    borderTop: '4px solid black',
+    borderTop: '4px solid white',
     backgroundColor: '#0048b6'
   },
 
@@ -27,6 +26,13 @@ const useStyles = createStyles((theme) => ({
       marginTop: theme.spacing.md,
     },
   },
+
+  icon: {
+    color: 'white',
+    '&:hover': {
+      backgroundColor: '#b60114'
+    }
+  }
 }));
 
 export function FooterSocial() {
@@ -35,16 +41,16 @@ export function FooterSocial() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <Image height={40} src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/uml.sidearmsports.com/images/responsive_2020/logo_main.svg"/>
+        <Image height={40} src="team-logo.png" />
         <Group spacing={0} className={classes.links} position="right" noWrap>
-          <ActionIcon size="xl">
-            <BrandTwitter color="white" size={25} />
+          <ActionIcon size="xl" className={classes.icon}>
+            <BrandTwitter size={25} />
           </ActionIcon>
-          <ActionIcon size="xl">
-            <BrandYoutube color="white" size={25} />
+          <ActionIcon size="xl" className={classes.icon}>
+            <BrandYoutube size={25} />
           </ActionIcon>
-          <ActionIcon size="xl">
-            <BrandInstagram color="white" size={25} />
+          <ActionIcon size="xl" className={classes.icon}>
+            <BrandInstagram size={25} />
           </ActionIcon>
         </Group>
       </Container>
