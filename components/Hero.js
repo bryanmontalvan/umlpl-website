@@ -43,7 +43,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     [theme.fn.smallerThan('xs')]: {
-      fontSize: 28,
+      fontSize: 35,
       lineHeight: 1.3,
     },
   },
@@ -62,7 +62,7 @@ const useStyles = createStyles((theme) => ({
   control: {
     backgroundColor: '#b60114',
     marginTop: theme.spacing.xl * 1.5,
-    
+
     '&:hover': {
       backgroundColor: '#blue',
     },
@@ -70,6 +70,7 @@ const useStyles = createStyles((theme) => ({
 
     [theme.fn.smallerThan('sm')]: {
       width: '100%',
+      height: 50
     },
   },
 }));
@@ -87,7 +88,7 @@ export function HeroContentUML() {
       <Container className={classes.container}>
         <Title className={classes.title}>UMASS LOWELL POWERLIFTING CLUB</Title>
         <Text className={classes.description} size="xl" mt="xl">
-          A competitive collegiate club team with the goal of developing student athletes as powerlifters 
+          A competitive collegiate club team with the goal of developing student athletes as powerlifters
           -- Welcoming students of all backgrounds and levels
         </Text>
 

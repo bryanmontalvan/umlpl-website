@@ -3,22 +3,20 @@ import React from 'react';
 import { createStyles } from '@mantine/core';
 import { ParallaxBanner } from 'react-scroll-parallax';
 
-const useStyles = createStyles((theme) => ({
+const useStyles = createStyles(() => ({
   lax: {
-    // filter: 'sepia(100%) hue-rotate(190deg) saturate(400%)',
-    opacity: '0.9'
+    opacity: '0.8'
   }
 }));
 
-export function Banner() {
+export function Banner({ link }) {
   const { classes } = useStyles();
-
+  console.log(link)
   return (
     <ParallaxBanner
       className={classes.lax}
       layers={[
-        { image: 'https://goriverhawks.com/images/2020/12/1/parallax2_bg.jpg', speed: -50 },
-
+        { image: String(link), speed: -50 },
       ]}
       style={{ aspectRatio: '2 / 1', height: 200 }}
     />
