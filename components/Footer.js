@@ -32,7 +32,7 @@ const useStyles = createStyles((theme) => ({
     '&:hover': {
       backgroundColor: '#b60114'
     }
-  }
+  },
 }));
 
 export function FooterSocial() {
@@ -41,7 +41,11 @@ export function FooterSocial() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <Image height={40} src="team-logo.png" alt="umlpl-logo"/>
+        <Image
+          width="100px"
+          src="team-logo.png"
+          alt="umlpl-logo"
+          className={classes.logo} />
         <Group spacing={0} className={classes.links} position="right" noWrap>
           <ActionIcon size="xl" className={classes.icon}>
             <BrandTwitter size={25} />
