@@ -115,7 +115,7 @@ export function LeadGrid() {
 		<div height={PRIMARY_COL_HEIGHT} key={card.id}>
 			<Card className={classes.card}>
 				<Card.Section>
-					<Image src={card.image} className={classes.image} />
+					<Image src={card.image} className={classes.image} alt={card.title}/>
 				</Card.Section>
 
 				<Group position="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>

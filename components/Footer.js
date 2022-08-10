@@ -41,7 +41,7 @@ export function FooterSocial() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <Image height={40} src="team-logo.png" />
+        <Image height={40} src="team-logo.png" alt="umlpl-logo"/>
         <Group spacing={0} className={classes.links} position="right" noWrap>
           <ActionIcon size="xl" className={classes.icon}>
             <BrandTwitter size={25} />
