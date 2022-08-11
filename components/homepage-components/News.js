@@ -107,7 +107,7 @@ const cardItems = [
 ]
 
 
-export function LeadGrid() {
+export function CardsGrid() {
 	const { classes } = useStyles();
 	const theme = useMantineTheme();
 
