@@ -101,7 +101,7 @@ const cardItems = [
 	// Oldest
 	{
 		id: 3,
-		title: "Odyssey Barbell Club Summer Open",
+		title: "Spindell Barbell Open Gym",
 		image: "teamworkout.jpg"
 	}
 ]
