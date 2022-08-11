@@ -8,7 +8,7 @@ import {
   Button
 } from '@mantine/core';
 import { BrandInstagram } from 'tabler-icons-react';
-import { ScheduleTable } from './smallComponents/ScheduleTable';
+import { ScheduleTable } from '../small-components/ScheduleTable';
 
 const crc_address = "https://goo.gl/maps/YBBne4oKhY8EMrvH7";
 
