@@ -1,4 +1,5 @@
 import { Avatar, Text, Button, Paper, createStyles, Group } from '@mantine/core';
+import Link from 'next/link';
 import { Mail, BrandInstagram } from 'tabler-icons-react';
 
 const useStyles = createStyles(() => ({
@@ -8,9 +9,30 @@ const useStyles = createStyles(() => ({
             backgroundColor: 'black'
         }
     },
+
+    emailBtn: {
+        textDecoration: 'none',
+        '&:hover': {
+            color: '#BB001B'
+        }
+    },
+
+    email: {
+        color: 'black',
+        textDecoration: 'none',
+        '&:hover': {
+            color: '#BB001B'
+        }
+    },
+
+    instagram: {
+        '&:hover': {
+            color: '#82008F',
+        }
+    }
 }));
 
-export function MemberCard({ avatar, name, email, job, bio }) {
+export function MemberCard({ avatar, name, year, job, bio, email, instagram }) {
     const { classes } = useStyles();
 
     return (
@@ -26,7 +48,7 @@ export function MemberCard({ avatar, name, email, job, bio }) {
                 {name}
             </Text>
             <Text align="center" size="md">
-                {email} • {job}
+                {year} • {job}
             </Text>
 
             <Text align="center" size="sm">
@@ -34,12 +56,14 @@ export function MemberCard({ avatar, name, email, job, bio }) {
             </Text>
 
             <Group position="center">
-                <Button variant="default" mt="md" leftIcon={<Mail />}>
-                    Email
+                <Button variant="default" mt="md" leftIcon={<Mail />} className={classes.emailBtn}>
+                    <a href={`mailto:${email}`} className={classes.email}>Email</a>
                 </Button>
-                <Button variant="default" mt="md" leftIcon={<BrandInstagram />}>
-                    Instagram
-                </Button>
+                <Link href={instagram}>
+                    <Button variant="default" mt="md" leftIcon={<BrandInstagram />} className={classes.instagram}>
+                        Instagram
+                    </Button>
+                </Link>
             </Group>
         </Paper>
     );

@@ -15,56 +15,72 @@ const team_members = [
         position: "Club Advisor",
         image: "dan.png",
         year: 'Graduate',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!"
+        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        email: "example@gmail.com",
+        instagram: "https://www.instagram.com/"
     },
     {
         name: "Walter Richardson",
         position: "President",
         image: "",
         year: 'Senior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!"
+        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        email: "example@gmail.com",
+        instagram: "https://www.instagram.com/"
     },
     {
         name: "Andy Truong",
         position: "Vice President",
         image: "",
         year: 'Junior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!"
+        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        email: "example@gmail.com",
+        instagram: "https://www.instagram.com/"
     },
     {
         name: "Peter Ou",
         position: "Secretary",
         image: "peter.png",
         year: 'Junior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!"
+        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        email: "example@gmail.com",
+        instagram: "https://www.instagram.com/"
     },
     {
         name: "Megan Duong",
         position: "Public Relations",
         image: "",
         year: 'Junior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!"
+        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        email: "example@gmail.com",
+        instagram: "https://www.instagram.com/"
     },
     {
         name: "Brendan Pham",
         position: "Co-Treasurer",
         image: "brendan.png",
         year: 'Junior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!"
+        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        email: "example@gmail.com",
+        instagram: "https://www.instagram.com/"
     },
     {
         name: "Bryan Montalvan",
         position: "Co-Treasurer",
         image: "bryan.JPG",
         year: 'Junior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!"
+        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        email: "example@gmail.com",
+        instagram: "https://www.instagram.com/"
     },
     {
         name: "Riley Hennesesy",
         position: "Event Coordinator",
         image: "",
         year: 'Junior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!"
+        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        email: "example@gmail.com",
+        instagram: "https://www.instagram.com/"
     },
 
 ]
@@ -108,7 +124,7 @@ export function AboutHero() {
     const { classes } = useStyles();
 
     const cards = team_members.map((card) => (
-        <MemberCard avatar={card.image} name={card.name} email={card.year} job={card.position} bio={card.bio} />
+        <MemberCard avatar={card.image} name={card.name} year={card.year} job={card.position} bio={card.bio} email={card.email} instagram={card.instagram} />
     ));
 
     return (
