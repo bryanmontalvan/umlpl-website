@@ -124,7 +124,16 @@ export function AboutHero() {
     const { classes } = useStyles();
 
     const cards = team_members.map((card) => (
-        <MemberCard avatar={card.image} name={card.name} year={card.year} job={card.position} bio={card.bio} email={card.email} instagram={card.instagram} />
+        <MemberCard 
+            key={card.name}
+            avatar={card.image} 
+            name={card.name} 
+            year={card.year} 
+            job={card.position} 
+            bio={card.bio} 
+            email={card.email} 
+            instagram={card.instagram} 
+        />
     ));
 
     return (

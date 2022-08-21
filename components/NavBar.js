@@ -103,10 +103,6 @@ export function Nav() {
       label: 'About Us',
     },
     {
-      link: '/team',
-      label: 'Our Team',
-    },
-    {
       link: '/photo-gallery',
       label: 'Photo Gallery',
     },
