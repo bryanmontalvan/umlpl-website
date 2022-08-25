@@ -1,11 +1,13 @@
 import React from 'react';
-import { 
+import {
     createStyles,
     SimpleGrid,
     Overlay,
     Container,
     Title,
-    Center
+    Text,
+    Center,
+    Stack
 } from '@mantine/core';
 import { MemberCard } from './Card';
 
@@ -117,6 +119,27 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
+    aboutHero: {
+        backgroundColor: "white",
+        borderRadius: '8px',
+    },
+
+    aboutTitle: {
+        fontFamily: 'upbolters',
+
+        [theme.fn.smallerThan('sm')]: {
+            fontSize: 25,
+        },
+    },
+
+    aboutDescription: {
+        width: '30vw',
+
+        [theme.fn.smallerThan('sm')]: {
+            width: '75vw',
+        },
+    }
+
 
 }));
 
@@ -124,15 +147,15 @@ export function AboutHero() {
     const { classes } = useStyles();
 
     const cards = team_members.map((card) => (
-        <MemberCard 
+        <MemberCard
             key={card.name}
-            avatar={card.image} 
-            name={card.name} 
-            year={card.year} 
-            job={card.position} 
-            bio={card.bio} 
-            email={card.email} 
-            instagram={card.instagram} 
+            avatar={card.image}
+            name={card.name}
+            year={card.year}
+            job={card.position}
+            bio={card.bio}
+            email={card.email}
+            instagram={card.instagram}
         />
     ));
 
@@ -144,12 +167,20 @@ export function AboutHero() {
                 zIndex={0}
             />
             <Container className={classes.container} pb={40}>
+            <Center>
+                    <Title my="lg" className={classes.title}>About Us</Title>
+                </Center>
+                <Stack align="center" my="sm" py="md" className={classes.aboutHero}>
+                    <Title className={classes.aboutTitle}>What is our purpose?</Title>
+                    <Text className={classes.aboutDescription}>To provide a safe space for people who are interested in the sport of powerlifting. To teach people the basics of the sport and to help foster newer lifters.  </Text>
+                </Stack>
                 <Center>
-                    <Title my="md" className={classes.title}>Meet Our E-Board</Title>
+                    <Title my="lg" className={classes.title}>Meet Our E-Board</Title>
                 </Center>
                 <SimpleGrid
                     cols={3}
                     spacing="xl"
+                    my="lg"
                     breakpoints={[
                         { maxWidth: 1950, cols: 2, spacing: 'lg' },
                         { maxWidth: 1300, cols: 1, spacing: 'md' },
