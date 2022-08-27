@@ -10,7 +10,7 @@ const elements = [
 
 export function ScheduleTable() {
   const rows = elements.map((element) => (
-    <tr key={element.name}>
+    <tr key={element.date}>
       <td style={{ fontFamily: 'Roboto' }}>{element.name}</td>
       <td style={{ fontFamily: 'Roboto' }}>{element.date}</td>
       <td style={{ fontFamily: 'Roboto' }}>{element.location}</td>
