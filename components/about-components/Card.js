@@ -41,7 +41,6 @@ export function MemberCard({ avatar, name, year, job, bio, email, instagram }) {
             withBorder
             p="lg"
             shadow="lg"
-            className={classes.card}
         >
             <Avatar src={avatar} size={180} radius={120} mx="auto" className={classes.image} />
             <Text align="center" size="xl" weight={600} mt="md">

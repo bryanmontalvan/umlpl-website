@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStyles, Container, Group, ActionIcon, Image } from '@mantine/core';
 import { BrandTwitter, BrandYoutube, BrandInstagram } from 'tabler-icons-react';
+import Link from 'next/link'
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -53,9 +54,11 @@ export function FooterSocial() {
           <ActionIcon size="xl" className={classes.icon}>
             <BrandYoutube size={25} />
           </ActionIcon>
-          <ActionIcon size="xl" className={classes.icon}>
-            <BrandInstagram size={25} />
-          </ActionIcon>
+          <Link href="https://www.instagram.com/umlpowerlifting/">
+            <ActionIcon size="xl" className={classes.icon}>
+              <BrandInstagram size={25} />
+            </ActionIcon>
+          </Link>
         </Group>
       </Container>
     </div>
