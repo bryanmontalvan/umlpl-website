@@ -35,6 +35,7 @@ export function SubmitForm() {
     File state, storing, & handling 
     ----------------------------------- */
     const [file, setFile] = useState(null);
+    const [img, setImage] = useState(); // Used for displaying
     const [error, setError] = useState(null);
     const [title, setTitle] = useState('');
     const [submitted, setSubmit] = useState(false);
@@ -42,10 +43,11 @@ export function SubmitForm() {
     // Extracts image-reference from inputted file
     const types = ['image/png', 'image/jpeg'];
     const handleFileChange = (e) => {
-        let selected = e.target.files[0];
+        const [file] = e.target.files;
+        setImage(URL.createObjectURL(file))
 
-        if (selected && types.includes(selected.type)) {
-            setFile(selected);
+        if (file && types.includes(file.type)) {
+            setFile(file);
             setError('');
         } else {
             setFile(null);
@@ -58,9 +60,15 @@ export function SubmitForm() {
     }
 
     const handleSubmit = (e) => {
+        // If title has been written and picture has been added
         if (title && file) {
             if (error) setError('')
-            setSubmit(true);
+            setSubmit(true)
+            // Band-aid fix -- FIX ME
+            setTimeout(() => {
+                setSubmit(false);
+            }, 5000)
+
         } else {
             setError('Error: make sure to enter an image-title')
         }
@@ -96,7 +104,7 @@ export function SubmitForm() {
                         />
 
                         {/* Will display image-preview */}
-                        {file && <img src={file.name} style={{ width: 350, marginTop: 30 }} />}
+                        {file && <img src={img} style={{ width: 350, marginTop: 30 }} />}
 
                         <Group position="right" mt="md">
                             <Button type="submit">Submit</Button>
