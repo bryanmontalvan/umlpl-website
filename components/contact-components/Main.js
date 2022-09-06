@@ -11,7 +11,7 @@ import {
     ActionIcon,
     Group
 } from '@mantine/core';
-import { BrandYoutube, BrandInstagram, BrandGmail } from 'tabler-icons-react';
+import { BrandYoutube, BrandInstagram, BrandGmail, BrandDiscord } from 'tabler-icons-react';
 import { ScheduleTable } from '../small-components/ScheduleTable';
 import Link from 'next/link'
 
@@ -134,6 +134,7 @@ export function ContactMain() {
                             { maxWidth: 755, cols: 1, spacing: 'sm' },
                         ]}
                     >
+                        {/* Email */}
                         <Group className={classes.socialButton}>
                             <ActionIcon size="xl" radius="lg" className={classes.icon}>
                                 <BrandGmail size={45} />
@@ -143,26 +144,30 @@ export function ContactMain() {
                                 <Text align="center" size="xs">If you have any questions or concerns</Text>
                             </Stack>
                         </Group>
-                        <Group className={classes.socialButton}>
-                            <ActionIcon size="xl" radius="lg" className={classes.icon}>
-                                <BrandInstagram size={45} />
-                            </ActionIcon>
-                            <Link href="https://www.instagram.com/umlpowerlifting/">
+                        {/* Instagram */}
+                        <Link href="https://www.instagram.com/umlpowerlifting/">
+                            <Group className={classes.socialButton}>
+                                <ActionIcon size="xl" radius="lg" className={classes.icon}>
+                                    <BrandInstagram size={45} />
+                                </ActionIcon>
                                 <Stack style={{ gap: 0 }} >
                                     <Text align="center" size="xl">@umlpowerlifting</Text>
                                     <Text align="center" size="xs">Follow our instagram</Text>
                                 </Stack>
-                            </Link>
-                        </Group>
-                        <Group className={classes.socialButton}>
-                            <ActionIcon size="xl" radius="lg" className={classes.icon}>
-                                <BrandYoutube size={45} />
-                            </ActionIcon>
-                            <Stack style={{ gap: 0 }}>
-                                <Text align="center" size="xl">To Be Announced</Text>
-                                <Text align="center" size="xs">Check out our YouTube</Text>
-                            </Stack>
-                        </Group>
+                            </Group>
+                        </Link>
+                        {/* Discord */}
+                        <Link href="https://discord.gg/Sk4T5m8zh6">
+                            <Group className={classes.socialButton}>
+                                <ActionIcon size="xl" radius="lg" className={classes.icon}>
+                                    <BrandDiscord size={45} />
+                                </ActionIcon>
+                                <Stack style={{ gap: 0 }}>
+                                    <Text align="center" size="xl">Our Discord</Text>
+                                    <Text align="center" size="xs">Join to chat with members</Text>
+                                </Stack>
+                            </Group>
+                        </Link>
                     </SimpleGrid>
                 </Container>
             </Container>

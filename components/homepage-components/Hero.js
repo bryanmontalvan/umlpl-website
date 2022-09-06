@@ -1,5 +1,6 @@
 import React from 'react';
 import { createStyles, Overlay, Container, Title, Button, Text } from '@mantine/core';
+import Link from 'next/link';
 
 const useStyles = createStyles((theme) => ({
   hero: {
@@ -91,10 +92,11 @@ export function HeroContentUML() {
           A competitive collegiate club team with the goal of developing student athletes as powerlifters
           -- Welcoming students of all backgrounds and levels
         </Text>
-
-        <Button size="xl" className={classes.control}>
-          Contact Us
-        </Button>
+        <Link href="/contact">
+          <Button size="xl" className={classes.control}>
+            Contact Us
+          </Button>
+        </Link>
       </Container>
     </div>
   );

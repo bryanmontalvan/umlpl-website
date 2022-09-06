@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStyles, Container, Group, ActionIcon, Image } from '@mantine/core';
-import { BrandTwitter, BrandYoutube, BrandInstagram } from 'tabler-icons-react';
+import { BrandTwitter, BrandYoutube, BrandInstagram, BrandDiscord } from 'tabler-icons-react';
 import Link from 'next/link'
 
 const useStyles = createStyles((theme) => ({
@@ -48,15 +48,14 @@ export function FooterSocial() {
           alt="umlpl-logo"
           className={classes.logo} />
         <Group spacing={0} className={classes.links} position="right" noWrap>
-          <ActionIcon size="xl" className={classes.icon}>
-            <BrandTwitter size={25} />
-          </ActionIcon>
-          <ActionIcon size="xl" className={classes.icon}>
-            <BrandYoutube size={25} />
-          </ActionIcon>
           <Link href="https://www.instagram.com/umlpowerlifting/">
             <ActionIcon size="xl" className={classes.icon}>
               <BrandInstagram size={25} />
+            </ActionIcon>
+          </Link>
+          <Link href="https://discord.gg/Sk4T5m8zh6">
+            <ActionIcon size="xl" className={classes.icon}>
+              <BrandDiscord size={25} />
             </ActionIcon>
           </Link>
         </Group>
