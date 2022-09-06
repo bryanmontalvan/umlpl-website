@@ -1,10 +1,10 @@
 import { Table } from '@mantine/core';
 
 const elements = [
-  { name: 'First Fall Meeting', date: '09-12-2022', location: 'CRC 510' },
-  { name: 'Regular Meeting', date: '09-28-2022', location: 'CRC 510' },
-  { name: 'Regular Meeting', date: '10-08-2022', location: 'CRC 510' },
-  { name: 'Spindell Open Gym', date: '10-15-2022', location: 'Spindell Barbell Club' },
+  { name: 'First Fall Meeting', date: '09-09-2022', time: '5:30pm', location: 'CRC Room 111'},
+  { name: 'Regular Meeting', date: '10-07-2022', time: '5:30pm', location: 'CRC Room 111' },
+  { name: 'Regular Meeting', date: '09-23-2022', time: '5:30pm', location: 'CRC Room 111' },
+  { name: 'Regular Meeting', date: '10-15-2022', time: '5:30pm', location: 'CRC Room 111' },
 ];
 
 
@@ -13,6 +13,7 @@ export function ScheduleTable() {
     <tr key={element.date}>
       <td style={{ fontFamily: 'Roboto' }}>{element.name}</td>
       <td style={{ fontFamily: 'Roboto' }}>{element.date}</td>
+      <td style={{ fontFamily: 'Roboto' }}>{element.time}</td>
       <td style={{ fontFamily: 'Roboto' }}>{element.location}</td>
     </tr>
   ));
@@ -23,6 +24,7 @@ export function ScheduleTable() {
         <tr>
           <th>Meeting Name</th>
           <th>Meeting Date</th>
+          <th>Time</th>
           <th>Location</th>
         </tr>
       </thead>
