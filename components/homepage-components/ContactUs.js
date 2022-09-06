@@ -5,10 +5,12 @@ import {
   Title,
   Center,
   Grid,
-  Button
+  Button,
+  Group
 } from '@mantine/core';
-import { BrandInstagram } from 'tabler-icons-react';
+import { BrandDiscord, BrandInstagram } from 'tabler-icons-react';
 import { ScheduleTable } from '../small-components/ScheduleTable';
+import Link from 'next/link';
 
 const crc_address = "https://goo.gl/maps/YBBne4oKhY8EMrvH7";
 
@@ -41,8 +43,17 @@ const useStyles = createStyles((theme) => ({
     fontFamily: 'Roboto',
   },
 
-  btn: {
+  btnInstagram: {
     backgroundColor: '#b60114',
+    width: '40%',
+    '&:hover': {
+      backgroundColor: 'black',
+    },
+  },
+
+  btnDiscord: {
+    backgroundColor: '#7289da',
+    width: '40%',
     '&:hover': {
       backgroundColor: 'black',
     },
@@ -70,10 +81,19 @@ export function ContactUs() {
         <Grid.Col span={4}>
           <Title order={2} className={classes.subTitle}>Contact Info</Title>
           <hr />
-          <Text className={classes.description}>Follow our instagram to stay up to date with club activity and important announcements</Text>
-          <Button leftIcon={<BrandInstagram size={18} />} variant="filled" mt="sm" className={classes.btn}>
-            Check out our instagram
-          </Button>
+          <Text className={classes.description}>Follow our instagram to stay up to date with club activity and important announcements. And join our Discord if you are interested in talking to current members!</Text>
+          <Group>
+            <Link href="https://www.instagram.com/umlpowerlifting/">
+              <Button leftIcon={<BrandInstagram size={18} />} variant="filled" mt="sm" className={classes.btnInstagram}>
+                Our instagram
+              </Button>
+            </Link>
+            <Link href="https://discord.gg/Sk4T5m8zh6">
+              <Button leftIcon={<BrandDiscord size={18} />} variant="filled" mt="sm" className={classes.btnDiscord}>
+                Our Discord
+              </Button>
+            </Link>
+          </Group>
         </Grid.Col>
         <Grid.Col span={6}>
           <Title order={2} className={classes.subTitle}>Facility / Meeting Place</Title>
