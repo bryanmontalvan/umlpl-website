@@ -25,7 +25,7 @@ const team_members = [
         name: "Walter Richardson",
         position: "President",
         image: "walter.jpg",
-        year: 'Senior',
+        year: 'Junior',
         bio: "I’m Walter, the President of UML powerlifting, I’m a 75kg lifter and I’m by no means the strongest but training is something I love and I enjoy sharing the powerlifting experience with others!",
         email: "example@gmail.com",
         instagram: "https://www.instagram.com/"
