@@ -13,15 +13,6 @@ import { MemberCard } from './Card';
 
 const team_members = [
     {
-        name: "Dan Howell",
-        position: "Club Advisor",
-        image: "dan.png",
-        year: 'Graduate',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
-        email: "example@gmail.com",
-        instagram: "https://www.instagram.com/"
-    },
-    {
         name: "Walter Richardson",
         position: "President",
         image: "walter.jpg",
@@ -85,6 +76,18 @@ const team_members = [
         instagram: "https://www.instagram.com/"
     },
 
+]
+
+const advisors = [
+    {
+        name: "Dan Howell",
+        position: "Club Advisor",
+        image: "dan.png",
+        year: 'Graduate',
+        bio: "Hello my name is Daniel Howell and I am excited to be advising the club. I have had a significant amount of success in powerlifting and in my career. As a alum of UML I am passionate to see everyone in the club succeed and achieve their goals. However I am able to assist you in terms of lifting or school let me know and I’ll do my best to serve.",
+        email: "example@gmail.com",
+        instagram: "https://www.instagram.com/"
+    },
 ]
 
 const useStyles = createStyles((theme) => ({
@@ -167,7 +170,7 @@ export function AboutHero() {
                 zIndex={0}
             />
             <Container className={classes.container} pb={40}>
-            <Center>
+                <Center>
                     <Title my="lg" className={classes.title}>About Us</Title>
                 </Center>
                 <Stack align="center" my="sm" py="md" className={classes.aboutHero}>
@@ -187,6 +190,19 @@ export function AboutHero() {
                     ]}>
                     {cards}
                 </SimpleGrid>
+                <Center>
+                    <Title my="lg" className={classes.title}>Meet Our Advisor</Title>
+                </Center>
+                <Container size="sm">
+                    <MemberCard key={advisors[0].name}
+                        avatar={advisors[0].image}
+                        name={advisors[0].name}
+                        year={advisors[0].year}
+                        job={advisors[0].position}
+                        bio={advisors[0].bio}
+                        email={advisors[0].email}
+                        instagram={advisors[0].instagram} />
+                </Container>
             </Container>
         </div>
     );
