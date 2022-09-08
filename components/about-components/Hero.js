@@ -62,16 +62,16 @@ const team_members = [
         position: "Co-Treasurer",
         image: "bryan.JPG",
         year: 'Junior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        bio: "Hey I'm Bryan, the Co-Treasurer of UMLPL. I compete at 90kg and am pretty new to sport. I know first hand how exciting it is to try out this sport and I'm excited to help you with that experience!",
         email: "example@gmail.com",
         instagram: "https://www.instagram.com/"
     },
     {
         name: "Riley Hennesesy",
         position: "Event Coordinator",
-        image: "",
+        image: "riley.jpg",
         year: 'Junior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        bio: "I’m Riley, the UML powerlifting event coordinator. I’m an 82.5kg powerlifter and a US Marine. My goal is to help everyone become the strongest version of themselves.",
         email: "example@gmail.com",
         instagram: "https://www.instagram.com/"
     },
