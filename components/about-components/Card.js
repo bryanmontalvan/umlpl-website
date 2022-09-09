@@ -54,7 +54,8 @@ export function MemberCard({ avatar, name, year, job, bio, email, instagram }) {
                 {bio}
             </Text>
 
-            <Group position="center">
+            {/* Commented for now */}
+            {/* <Group position="center">
                 <Button variant="default" mt="md" leftIcon={<Mail />} className={classes.emailBtn}>
                     <a href={`mailto:${email}`} className={classes.email}>Email</a>
                 </Button>
@@ -63,7 +64,7 @@ export function MemberCard({ avatar, name, year, job, bio, email, instagram }) {
                         Instagram
                     </Button>
                 </Link>
-            </Group>
+            </Group> */}
         </Paper>
     );
 }
