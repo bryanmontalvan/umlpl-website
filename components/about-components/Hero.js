@@ -42,9 +42,9 @@ const team_members = [
     {
         name: "Megan Duong",
         position: "Public Relations",
-        image: "",
-        year: 'Junior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        image: "megan.jpg",
+        year: 'Senior',
+        bio: "Hey, I’m Megan! I’m the Public Relations officer of UMLPL and a current senior studying clinical exercise science. Powerlifting has kept weight training exciting for me and I can’t wait to see success in my teammates and myself in this sport!",
         email: "example@gmail.com",
         instagram: "https://www.instagram.com/"
     },
@@ -53,7 +53,7 @@ const team_members = [
         position: "Co-Treasurer",
         image: "brendan.png",
         year: 'Junior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        bio: "Hey! I’m a Co-Treasurer along with Bryan. I compete at 75kg and am excited to be apart of this great team!",
         email: "example@gmail.com",
         instagram: "https://www.instagram.com/"
     },
