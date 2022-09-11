@@ -24,9 +24,9 @@ const team_members = [
     {
         name: "Andy Truong",
         position: "Vice President",
-        image: "",
+        image: "andy.png",
         year: 'Junior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        bio: "Hey! I’m Andy, the VP of UMLPL. I’m currently a 82.5kg, who’s currently studying MIS at UML. Powerlifting has given me a sense of community that I’m excited to share with others! I hope to see y’all at the club meetings!",
         email: "example@gmail.com",
         instagram: "https://www.instagram.com/"
     },
@@ -35,7 +35,7 @@ const team_members = [
         position: "Secretary",
         image: "peter.png",
         year: 'Junior',
-        bio: "Hello my name is (name) and I'm excited to be doing x for the club in this upcoming year. Hope to see you all at the club meeting!",
+        bio: "Hi, my name is Peter and I’ll be serving as your secretary for UMass Lowell Powerlifting. I compete as a 67.5 kg lifter and powerlifting has been a long time passion of mine. Super excited for what’s in store for the future!",
         email: "example@gmail.com",
         instagram: "https://www.instagram.com/"
     },
