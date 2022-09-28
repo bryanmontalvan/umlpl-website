@@ -7,12 +7,15 @@ import { ContactUs } from "../components/homepage-components/ContactUs";
 // Parallax Components
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Banner } from "../components/Parallax";
-
+import Head from "next/head";
 
 // This is where all the website's components are called!
 export default function Home() {
   return (
     <>
+      <Head>
+        <link rel="shortcut icon" href="teamlogo.png" />
+      </Head>
       <ParallaxProvider>
         <Nav />
         <HeroContentUML />
