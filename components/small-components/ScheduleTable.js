@@ -1,12 +1,11 @@
 import { Table } from '@mantine/core';
 
 const elements = [
-  { name: 'First Fall Meeting', date: '09-09-2022', time: '5:30pm', location: 'CRC Room 111'},
-  { name: 'Regular Meeting', date: '10-07-2022', time: '5:30pm', location: 'CRC Room 111' },
-  { name: 'Regular Meeting', date: '09-23-2022', time: '5:30pm', location: 'CRC Room 111' },
-  { name: 'Regular Meeting', date: '10-15-2022', time: '5:30pm', location: 'CRC Room 111' },
+  { name: 'Team Practice', date: '10-15-2022', time: '9:00am', location: 'CRC Fitness Center'},
+  { name: 'Regular Meeting', date: '10-21-2022', time: '5:30pm', location: 'CRC Room 111' },
+  { name: 'Team Practice', date: '10-29-2022', time: '9:00am', location: 'CRC Fitness Center' },
+  { name: 'Regular Meeting', date: '11-04-2022', time: '5:30pm', location: 'CRC Room 111' },
 ];
-
 
 export function ScheduleTable() {
   const rows = elements.map((element) => (
